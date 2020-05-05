@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <link rel="stylesheet" href="blood_regi.css">
+    
+       <script >
+        function test(){
+        var myvalue=document.getElementById('firstname').value;
+        if(myvalue.length==0){
+            alert('please enter the text first');
+            return;
+        }
+
+        }
+    </script>
+   
+</head>
+<body>
+    <h3>Register yourself :</h3>
+    <form>
+        <ul id="ul">
+            <li>
+                <label id="label01" >First Name :<input id="firstname" maxlength="10" type="text" placeholder="name" ></label>
+                <label id="label02" >last Name :<input id="lastname" maxlength="10" type="text" placeholder="last name" ></label>
+                <label style="margin-left: 20px;">Select Image : <input id="image" type="file" name="image" accept="image/*" ></label>
+            </li>
+            <li id="list02">
+                <label id="label03" >Father's Name :<input  id="father"maxlength="10" type="text" placeholder="father's name" ></label>
+                <label id="label04" >Mother's Name :<input  id="mother" maxlength="10" type="text" placeholder="Mother's name" ></label>
+            </li>
+            <li id="list03">
+                <label id="label05">Date of birth :<input id="dob" maxlength="10" type="date" ></label>
+                <label id="label06" style="margin-left: 10px;">Gender : <label>Male :</label><input id="gender1" type="radio" name="gender"><label>female :</label><input id="gender1" type="radio" name="gender"></label>
+            </li>
+            <li id="list04"><label>Blood Group  :<select id="select">
+                <option value="">A<sup>+ve</sup></option>
+                <option value="">B<sup>+ve</sup></option>
+                <option value="">AB<sup>+ve</sup></option>
+                <option value="">A<sup>-ve</sup></option>
+                <option value="">B<sup>-ve</sup></option>
+                <option value="">AB<sup>-ve</sup></option>
+                <option value="">O<sup>+ve</sup></option>
+                <option value="">O<sup>-ve</sup></option>
+                
+            </select></label>
+        <label>Mobile No. :<input type="tel" placeholder="number" maxlength="10"></label></li>
+        <li><label >Email : <input type="email" name="email" id="email"style="margin-top: 40px;"></label>   </li> 
+        <li><label >Any type of disease (if any): <input type="text" placeholder="Y/N" id="type"style="margin-top: 20px;"></label>   </li> 
+        
+        
+           
+      <li> <label>Address   : <textarea cols="200" rows="1" maxlength="1000" style="margin-top: 40px;"></textarea></label></li> 
+    
+      
+           <button id="button" onclick='test()'>  <a href="reg_success.html" style="border: 3px; margin-top: 30px;" onclick="test()" >submit</a></button>
+        </ul>
+       
+    </form>
+</body>
+</html>

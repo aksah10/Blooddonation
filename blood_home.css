@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(119, 84, 151);
+}
+
+#img01{
+    text-align: center;
+}
+#ul01{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   overflow: hidden;
+   background-color: rgb(179, 179, 174);
+  
+}
+#ul01 li{
+    float: left;
+           
+}
+#ul01 a:hover{
+background-color: lime;
+}
+#ul01 a {
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(243, 57, 11);
+    
+}
+h3 a{
+    color: rgb(131, 228, 21);
+    text-decoration: none;
+}
+h3 a :hover{
+    background-color: orchid;
+}
